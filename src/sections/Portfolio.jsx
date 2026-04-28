@@ -48,9 +48,16 @@ const Portfolio = () => {
 
   const categories = ["All", "Reel", "Wedding Teaser", "Wedding Highlight", "Wedding Film", "Pre-Wedding", "Fashion"];
 
-  // The logic: filter the list based on the active state
+  // The logic: filter the list based on the active state.
+  // If "All" is selected, show only up to 2 projects from each category.
   const filteredProjects = activeFilter === "All" 
-    ? projects 
+    ? projects.filter((() => {
+        const counts = {};
+        return (p) => {
+          counts[p.category] = (counts[p.category] || 0) + 1;
+          return counts[p.category] <= 2; // Change this to 1 if you strictly want 1 per category
+        };
+      })())
     : projects.filter(p => p.category === activeFilter);
 
   return (
