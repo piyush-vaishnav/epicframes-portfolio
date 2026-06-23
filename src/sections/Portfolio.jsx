@@ -29,7 +29,28 @@ const projects = [
   { id: 16, title: "Fashion Edit 01", category: "Fashion", thumbnail: "https://img.youtube.com/vi/t-ENxjGEV38/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/t-ENxjGEV38" },
   { id: 17, title: "Fashion Edit 02", category: "Fashion", thumbnail: "https://img.youtube.com/vi/CS-5aq1zE78/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/CS-5aq1zE78" },
   { id: 18, title: "Fashion Edit 03", category: "Fashion", thumbnail: "https://img.youtube.com/vi/8qfP3SmNUdc/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/8qfP3SmNUdc" },
-  { id: 19, title: "Fashion Edit 04", category: "Fashion", thumbnail: "https://img.youtube.com/vi/cY5eWXp5I9Q/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/cY5eWXp5I9Q" }
+  { id: 19, title: "Fashion Edit 04", category: "Fashion", thumbnail: "https://img.youtube.com/vi/cY5eWXp5I9Q/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/cY5eWXp5I9Q" },
+  // Real Estate
+  { id: 21, title: "Real Estate Video 03", category: "Real Estate", thumbnail: "https://img.youtube.com/vi/DgKo3XhgpO8/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/DgKo3XhgpO8" },
+  { id: 22, title: "Real Estate Video 04", category: "Real Estate", thumbnail: "https://img.youtube.com/vi/nceHbqpQ790/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/nceHbqpQ790" },
+  { id: 23, title: "Real Estate Video 05", category: "Real Estate", thumbnail: "https://img.youtube.com/vi/RUk6t1kP4-E/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/RUk6t1kP4-E" },
+  { id: 24, title: "Real Estate Video 06", category: "Real Estate", thumbnail: "https://img.youtube.com/vi/M1-N2ra1cb0/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/M1-N2ra1cb0" },
+  // E-Commerce
+  { id: 25, title: "E-Commerce Video 01", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/gqqqMtYcKC4/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/gqqqMtYcKC4" },
+  { id: 26, title: "E-Commerce Video 02", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/SVfogORMcxY/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/SVfogORMcxY" },
+  { id: 27, title: "E-Commerce Video 03", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/NoeyWNZnXSY/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/NoeyWNZnXSY" },
+  { id: 28, title: "E-Commerce Video 04", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/fXIoZujRlo4/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/fXIoZujRlo4" },
+  { id: 29, title: "E-Commerce Video 05", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/r5sPKkT2_x8/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/r5sPKkT2_x8" },
+  { id: 30, title: "E-Commerce Video 06", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/hglH1cXnh50/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/hglH1cXnh50" },
+  { id: 31, title: "E-Commerce Video 07", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/r4zCOsQynJA/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/r4zCOsQynJA" },
+  { id: 32, title: "E-Commerce Video 08", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/XsI1W8TtZQc/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/XsI1W8TtZQc" },
+  { id: 33, title: "E-Commerce Video 09", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/VWEauKdTxBA/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/VWEauKdTxBA" },
+  { id: 34, title: "E-Commerce Video 10", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/PxgNSrhDmd4/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/PxgNSrhDmd4" },
+  { id: 35, title: "E-Commerce Video 11", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/sMT2fa70Wy4/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/sMT2fa70Wy4" },
+  { id: 36, title: "E-Commerce Video 12", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/zuIaxuJ2EAw/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/zuIaxuJ2EAw" },
+  { id: 37, title: "E-Commerce Video 13", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/V3iUZGvmbIc/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/V3iUZGvmbIc" },
+  { id: 38, title: "E-Commerce Video 14", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/NNAcy-SWwhM/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/NNAcy-SWwhM" },
+  { id: 39, title: "E-Commerce Video 15", category: "E-Commerce", thumbnail: "https://img.youtube.com/vi/DPr-JvzF4-c/hqdefault.jpg", videoUrl: "https://www.youtube.com/embed/DPr-JvzF4-c" }
 ];
 
 const Portfolio = () => {
@@ -46,7 +67,7 @@ const Portfolio = () => {
   const headerOpacity = useTransform(smoothScroll, [0, 1], [0, 1]);
   const headerY = useTransform(smoothScroll, [0, 1], [100, 0]);
 
-  const categories = ["All", "Reel", "Wedding Teaser", "Wedding Highlight", "Wedding Film", "Pre-Wedding", "Fashion"];
+  const categories = ["All", "Reel", "Wedding Teaser", "Wedding Highlight", "Wedding Film", "Pre-Wedding", "Fashion", "E-Commerce", "Real Estate"];
 
   // The logic: filter the list based on the active state.
   // If "All" is selected, show only up to 2 projects from each category.
